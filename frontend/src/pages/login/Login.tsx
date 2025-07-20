@@ -29,7 +29,7 @@ const Login = () => {
     <div className="inazuma-login-page">
       <div className="inazuma-login-container">
         <div className="inazuma-login-box">
-          <h2>Inazuma Login</h2>
+          <h2> Login</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
