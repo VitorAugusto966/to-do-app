@@ -1,0 +1,107 @@
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #1f1c2c, #928dab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inazuma-login-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #1f1c2c, #928dab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inazuma-login-container {
+  width: 100%;
+  max-width: 460px;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 2.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.5s ease;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.inazuma-login-box h2 {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.inazuma-login-input {
+  width: 93%;
+  padding: 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.inazuma-login-input:focus {
+  border-color: #5c6bc0;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(92, 107, 192, 0.2);
+  outline: none;
+}
+
+.inazuma-login-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #5c6bc0, #3f51b5);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.inazuma-login-button:hover {
+  background: linear-gradient(to right, #3f51b5, #5c6bc0);
+  transform: translateY(-1px);
+}
+
+.inazuma-login-error {
+  color: #ff4d4f;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.inazuma-login-footer {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  text-align: center;
+  color: #ccc;
+}
+
+.inazuma-login-footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.inazuma-login-footer a:hover {
+  text-decoration: underline;
+}
